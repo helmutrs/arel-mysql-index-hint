@@ -14,7 +14,7 @@ module ArelMysqlIndexHint
       self
     end
 
-    def build_arel
+    def build_arel(aliases)
       arel = super
 
       if mysql_index_hint_value.present?
